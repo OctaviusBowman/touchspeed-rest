@@ -2,7 +2,10 @@ const express = require('express')
 const router = express.Router()
 const Profile = require('../models/profile')
 
-// Getting All
+// TODO: npm i bcrypt on post route, 
+
+// Getting All ** Would never need for user profile **
+
 router.get('/', async (req, res) => {
     try {
         const profiles = await Profile.find()
